@@ -5,13 +5,17 @@ use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
 {
-    public function run()
+    public function run(): void
     {
         $this->call([
-            RoleSeeder::class,
+            AdminSeeder::class,
             UserSeeder::class,
             CategorySeeder::class,
-            ProductSeeder::class
+            ProductSeeder::class,
+            BannerSeeder::class,
+            PromotionSeeder::class,
+            OrderSeeder::class,
+            CommentSeeder::class,
         ]);
     }
 }
